@@ -1,28 +1,31 @@
 ////////////////////////////////////////////////////////////////////////////
 //
 // Function Name :  dispaly()
-// Description   :  Print MARVELOUS 5 Time
-// Input         :  -------
-// Output        :  String
+// Description   :  Accept one number from user and print that number of * on screen. (using while loop)
+// Input         :  Integer
+// Output        :  *
 // Author        :  Shivaji das
 // Date          :  23 april 2021
 //
 ////////////////////////////////////////////////////////////////////////////
 
-#include<stdio.h>
+#include <stdio.h>
 
-void display()
+void display(int no)
 {
-	int i=0;
-	for(i=1;i<=5;i++)
+	//int i=0;
+	while(no>0)
 	{
-		printf("MARVELOUS\n");
+		printf("*\n");
+		no--;
 	}
 }
 
 int main()
 {
-	display();
-
+	int value=0;
+	printf("Enter number\n");
+	scanf("%d",&value);
+	display(value);
 	return 0;
 }
